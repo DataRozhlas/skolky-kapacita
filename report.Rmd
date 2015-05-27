@@ -1,0 +1,36 @@
+---
+title: "Kapacita mateřských školek"
+author: "jan.cibulka@samizdat.cz 776 307 158"
+date: "25. května 2015"
+output:
+  html_document:
+    toc: yes
+---
+
+# Zdroj dat
+
+Český rozhlas získal od ministerstva školství kompletní databázi mateřských školek včetně údajů o jejich kapacitě a aktuální zaplněnosti (stav v aktuálním školním roce 2014/2015).
+
+Zdrojová data ve formátu XLSX: https://copy.com/9N4UezHTYXY1jsIv
+
+# Hlavní zjištění
+
+
+
+# Interaktivní mapa
+
+Mapa znázorňuje zaplněnost mateřských školek pro každý územní obvod vymezený podle poštovního směrovacího čísla (PSČ). Zelená barva znamená nízkou průměrnou zaplněnost, červená signalizuje nedostatek volných míst ve školkách.
+
+V mapě lze pomocí vyhledávacího pole vlevo dole vyhledávat adresy či názvy obcí. Po najetí myší nad vybrané území se v v pravém sloupci zobrazí seznam všech školek, u každé je údaj o její kapacitě a aktuální zaplněnosti.
+
+```{r, echo=FALSE, results='asis'}
+cat('<iframe src="https://samizdat.cz/data/skolky-kapacita-www" class="ig" width="1000" height="600" scrolling="no" style="margin: 10px 0px;" frameborder="0"></iframe>
+<script src="https://samizdat.cz/tools/cro-fitter/0.0.5.js"></script>')
+```
+
+Mapu můžete vložit do článku zkopírováním následujícího HTML kódu:
+
+```html
+<iframe src="https://samizdat.cz/data/skolky-kapacita-www" class="ig" width="1000" height="600" scrolling="no" style="margin: 10px 0px;" frameborder="0"></iframe>
+<script src="https://samizdat.cz/tools/cro-fitter/0.0.5.js"></script>
+```
